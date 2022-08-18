@@ -469,11 +469,11 @@ a {
 
 /* section action */
 
-.actions {
+.action {
     padding-top: 0;
 }
 
-.actions-title {
+.action__title {
     font-size: 36px;
     line-height: 1.16;
     letter-spacing: 0.03em;
@@ -483,27 +483,27 @@ a {
     margin-bottom: 50px;
 }
 
-.actions-list {
+.action__list {
     display: flex;
     flex-wrap: wrap;
     padding-left: 0;
     margin: 0;
 }
 
-.actions-item:not(:last-child) {
+.action__item:not(:last-child) {
     margin-right: 30px;
 }
 
-.actions-item {
+.action__item {
     width: calc((100% - 2 * 30px) / 3);
     position: relative;
 }
 
-.actions-image {
+.action__image {
     display: flex;
 }
 
-.label {
+.action__label {
     position: absolute;
     bottom: 0;
     left: 0;
