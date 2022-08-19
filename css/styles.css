@@ -749,20 +749,20 @@ a {
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.work__link:hover .overlay__text {
+.work__link:hover .kard__text {
     transform: translateX(0);
 }
 
-.overlay {
+.kard {
     position: relative;
     overflow: hidden;
 }
 
-.overlay__image {
+.kard__image {
     display: block;
 }
 
-.overlay__text {
+.kard__text {
     position: absolute;
     bottom: 0;
     left: 0;
