@@ -420,11 +420,6 @@ a {
 
 /* section features */
 
-.feature__title {
-    display: none;
-    text-align: center;
-}
-
 .feature__list {
     display: flex;
     margin: 0;
@@ -675,10 +670,6 @@ a {
     margin: 94px auto;
 }
 
-.portfolio__title {
-    display: none;
-}
-
 .filter {
     display: flex;
     justify-content:center;
@@ -907,19 +898,6 @@ a {
     margin-right: 12px;
 }
 
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-}
-
 .subscription__input {
     background-color: inherit;
     width: 358px;
@@ -940,4 +918,17 @@ a {
 
 .subscription__icon {
     margin-left: 10px;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
