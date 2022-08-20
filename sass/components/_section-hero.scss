@@ -19,10 +19,9 @@
 
     &__title {
         color: $background-color;
-        font-size: 44px;
-        font-weight: 900;
-        line-height: 1.36;
-        letter-spacing: 0.06em;
+        
+        @include font(44px, 900, 1.36, 0.06em);
+   
         text-transform: uppercase;
 
         margin-bottom: 30px;
@@ -30,6 +29,7 @@
 
     &__button {
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        padding: 0;
 
         &:hover,
         &:focus {
@@ -112,10 +112,7 @@
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &__title {
-        font-size: 20px;
-        line-height: 1.15;
-        font-weight: 700;
-        letter-spacing: 0.03em;
+        @include font(20px, 700, 1.15, 0.03em);
 
         text-align: center;
 
@@ -212,10 +209,7 @@
     text-align: left;
     margin-bottom: 4px;
 
-    font-size: 12px;
-    line-height: 1.16;
-    font-weight: 400;
-    letter-spacing: 0.03em;
+    @include font(12px, 400, 1.16, 0.03em);
 
     color: $text-color;
 }
@@ -238,9 +232,7 @@
     height: 120px;
     padding: 12px 16px;
 
-    font-size: 12px;
-    line-height: 1.16;
-    letter-spacing: 0.01em;
+    @include font(12px, 400, 1.16, 0.01em);
 
     resize: none;
 }
@@ -269,10 +261,7 @@
     &__label {
         @extend %flex-center;
 
-        font-size: 14px;
-        line-height: 1.71;
-        font-weight: 400;
-        letter-spacing: 0.03em;
+        @include font(14px, 400, 1.71, 0.03em);
 
         color: $text-color;
     }

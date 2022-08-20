@@ -1,7 +1,6 @@
 .client__title {
-    font-size: 36px;
-    line-height: 1.16;
-    letter-spacing: 0.03em;
+    @include font(36px, 700, 1.16, 0.03em);
+
     text-align: center;
     margin-bottom: 50px;
 }

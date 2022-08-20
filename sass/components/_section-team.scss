@@ -2,9 +2,8 @@
     background-color: $button-color;
 
     &__title {
-        font-size: 36px;
-        line-height: 1.2;
-        letter-spacing: 0.03em;
+        @include font(36px, 700, 1.2, 0.03em);
+        
         text-align: center;
         margin-top: 0;
         margin-bottom: 50px;
@@ -37,10 +36,7 @@
     }
 
     &__subtitle {
-        font-size: 16px;
-        font-weight: 500;
-        line-height: 1.18;
-        letter-spacing: 0.03em;
+        @include font(16px, 500, 1.18, 0.03em);
     
         margin-bottom: 10px;
     }
@@ -48,9 +44,7 @@
     &__text {
         color: $text-color;
     
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 1.18;
+        @include font(16px, 400, 1.18, 0.03em);
     
         margin-bottom: 16px;
     }

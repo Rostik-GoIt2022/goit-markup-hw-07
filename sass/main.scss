@@ -1,8 +1,8 @@
-
+@import './base/fonts.scss';
 @import './base/reset';
+@import './utils/mixin';
 @import './utils/variables';
 @import './utils/common';
-@import './utils/mixin';
 @import './components/header';
 @import './components/section-hero';
 @import './components/section-features';
@@ -15,5 +15,5 @@
 body {
     background-color: var(--background-color);
     color: $brand-color;
-    font-family: 'Roboto', 'Raleway', sans-serif;
+    font-family: $roboto;
 }
