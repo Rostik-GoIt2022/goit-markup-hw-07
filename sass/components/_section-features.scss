@@ -5,11 +5,15 @@
 
 .feature__item {
     width: 270px;
+
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
 }
 
-.feature__item:not(:last-child) {
-    margin-right: 30px;
-}
+// .feature__item:not(:last-child) {
+//     margin-right: 30px;
+// }
 
 .feature__box {
     @extend %flex-center;
