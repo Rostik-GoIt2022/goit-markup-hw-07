@@ -121,9 +121,7 @@
 }
 
 .subscription__button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %flex-center;
 
     padding: 0;
 }

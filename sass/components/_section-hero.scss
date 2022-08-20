@@ -129,9 +129,7 @@
         top: 8px;
         right: 8px;
 
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @extend %flex-center;
 
         width: 30px;
         height: 30px;
@@ -258,46 +256,80 @@
 .agreement {
     margin-bottom: 30px;
     margin-top: 20px;
+
+    &__label {
+        @extend %flex-center;
+
+        font-size: 14px;
+        line-height: 1.71;
+        font-weight: 400;
+        letter-spacing: 0.03em;
+
+        color: $text-color;
+    }
+
+    &__input {
+        appearance: none;
+    }
+
+    &__box {
+        @extend %flex-center;
+    
+        border: 2px solid #000000;
+        border-radius: 2px;
+        width: 16px;
+        height: 15px;
+    
+        margin-right: 7px;
+    }
+
+    &__input:checked+&__box {
+        background-color: $accent-color;
+        border-color: $accent-color;
+    }
+
+    &__link {
+        color: $accent-color;
+        text-decoration: underline;
+    }
 }
 
-.agreement__label {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 14px;
-    line-height: 1.71;
-    font-weight: 400;
-    letter-spacing: 0.03em;
+// .agreement__label {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     font-size: 14px;
+//     line-height: 1.71;
+//     font-weight: 400;
+//     letter-spacing: 0.03em;
 
-    color: $text-color;
-}
+//     color: $text-color;
+// }
 
-.agreement__input {
-    appearance: none;
-}
+// .agreement__input {
+//     appearance: none;
+// }
 
-.agreement__box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+// .agreement__box {
+//     @extend %flex;
 
-    border: 2px solid #000000;
-    border-radius: 2px;
-    width: 16px;
-    height: 15px;
+//     border: 2px solid #000000;
+//     border-radius: 2px;
+//     width: 16px;
+//     height: 15px;
 
-    margin-right: 7px;
-}
+//     margin-right: 7px;
+// }
 
-.agreement__input:checked+.agreement__box {
-    background-color: $accent-color;
-    border-color: $accent-color;
-}
+// .agreement__input:checked+.agreement__box {
+//     background-color: $accent-color;
+//     border-color: $accent-color;
+// }
 
-.agreement__link {
-    color: $accent-color;
-    text-decoration: underline;
-}
+// .agreement__link {
+//     color: $accent-color;
+//     text-decoration: underline;
+// }
 
 .form__button {
     width: 200px;

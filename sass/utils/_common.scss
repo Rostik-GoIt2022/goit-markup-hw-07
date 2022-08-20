@@ -42,3 +42,9 @@
 %hover-focus:focus {
     color: $accent-color;
 }
+
+%flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
